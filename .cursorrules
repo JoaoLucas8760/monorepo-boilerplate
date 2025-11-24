@@ -1,0 +1,29 @@
+# 🔧 Regras Globais do Projeto
+
+## 🧩 Componentes de UI
+
+- Sempre utilizar componentes do shadcn/ui.
+- Nunca utilizar <button>, <input> ou HTML cru quando existir componente correspondente no shadcn.
+- Preferir sempre: Button, Card, Input, Label, Form, Select, Dialog, Sheet, DropdownMenu, Avatar, Badge, etc.
+
+## 🎨 Estilização
+
+- Utilizar Tailwind sempre.
+- Evitar CSS puro salvo quando realmente necessário.
+- Manter o padrão de design system baseado em tokens.
+
+## ⚛️ React / Next
+
+- Utilizar componentes server-first, exceto quando necessário client.
+- Usar `use client` apenas quando houver interação.
+- Priorizar RSC e otimizações do Next 14+.
+
+## 🧱 Estrutura
+
+- Todos os novos componentes devem ficar em `components/ui` ou `components/app`.
+- Utilizar `lib/utils.ts` para funções utilitárias.
+
+## 🔐 Boas práticas
+
+- Não repetir código — sempre criar componentes reutilizáveis.
+- Usar sempre TypeScript com tipos explícitos.

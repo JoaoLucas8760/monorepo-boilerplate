@@ -1,0 +1,28 @@
+{
+  "name": "monorepo-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo com Next.js para Web e API",
+  "scripts": {
+    "dev": "pnpm --filter \"./apps/*\" dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm --filter \"./apps/*\" build",
+    "build:web": "pnpm --filter web build",
+    "build:api": "pnpm --filter api build",
+    "start": "pnpm --filter \"./apps/*\" start",
+    "start:web": "pnpm --filter web start",
+    "start:api": "pnpm --filter api start",
+    "lint": "pnpm --filter \"./apps/*\" lint",
+    "clean": "pnpm --filter \"./apps/*\" clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
+
+
